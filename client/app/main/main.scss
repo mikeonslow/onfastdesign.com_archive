@@ -1,0 +1,128 @@
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.navbar-brand-logo img {
+    height: 100%;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #121212;
+
+    .panel {
+        padding: $padding-large-horizontal*2 $padding-large-vertical*2;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: solid 2px rgba(255, 255, 255, 0.7);
+        width: 50%;
+        height: 90%;
+        margin: 2% 25%;
+
+        h1 {
+            color: $brand-dark;
+            font-size: $font-size-base*8 !important;
+        }
+
+        h2 {
+            color: $brand-light;
+            font-size: $font-size-base*4 !important;
+        }
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 5%;
+
+            h1 {
+                font-size: $font-size-base*4 !important;
+            }
+
+            h2 {
+                font-size: $font-size-base*2 !important;
+            }
+
+        }
+
+    }
+}
+
+.row > * {
+    //border: 1px solid green;
+}
+
+.brand-primary {
+    color: $brand-primary;
+}
+
+.site-header {
+    height: 20%;
+    background-image: url("/assets/images/theD.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    /*position: absolute;
+    bottom: 0px;
+    */
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,000000+100 */
+    background: #222222; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #222222 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #222222 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #222222 0%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #222222 0%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #222222 0%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
+    //border-top: 1px solid darken($brand-primary, 5%);
+}
+
+.social-bar {
+    position: absolute;
+    z-index: 100000000;
+    top: 150px;
+    left: 0px;
+    color: $brand-primary;
+
+    .fa-cont {
+        padding: 9px;
+        width: 60px;
+        height: 60px;
+        background-color: darken($brand-primary, 80%) !important;
+        margin: 15px;
+        transition: all 0.30s ease;
+        border-left: 0px solid $brand-primary;
+    }
+
+    .fa-cont:hover {
+        transition: all 0.20s ease;
+        border-left: 6px solid $brand-primary;
+    }
+}
+
+.navbar-text {
+    margin-left: 15px;
+    color: $brand-primary;
+}
+
+a.btn-client-login {
+    color: darken($brand-primary, 20%) !important;
+}
